@@ -21,15 +21,6 @@ def csv_in_folder(files):
 def first2(word):
     return(word[:2])
 
-#funkce na doplnění nul před číslo aby "mapmaker" správně přečetl data
-def zeros(var, numzer):
-  nms = str(var)
-  nm = nms.split(".")
-  numlen = len(nm[0])
-  zer = numzer - numlen
-  dec = '0' * zer + str(nm[0])
-  return(str(dec + '.' + nm[1]))
-
 #funkce na vytvoření kombinací roků
 def nonrepcom2 (lst):
     result = []
